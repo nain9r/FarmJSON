@@ -1,6 +1,6 @@
 from django.urls import path
-from . import views
+from .views import AllScenesChoicesView
 
 urlpatterns = [
-    path('json_data', views.get_json_data, name='json_data'),
+    path('scenes/', AllScenesChoicesView.as_view(), name='all_scenes_choices'),  # New URL for the combined choices view
 ]
