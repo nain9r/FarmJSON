@@ -85,4 +85,4 @@ class Intro1(models.Model):
 
 
 class Intro2(models.Model):
-    intro2= models.CharField(max_length=200)
+    intro2 = models.CharField(max_length=200)
